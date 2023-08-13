@@ -100,7 +100,7 @@ body {
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    gap: 32px;
+    gap: 4rem;
 }
 
 .texto-socialm {
@@ -198,5 +198,9 @@ body {
 
     .foto-curriculum {
         width: 80%;
+    }
+
+    .principal-links {
+        margin: 0 0 1.8rem 0;
     }
 }
