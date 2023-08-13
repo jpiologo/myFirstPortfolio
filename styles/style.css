@@ -28,7 +28,7 @@ body {
 
 .cabecalho-menu {
     display: flex;
-    gap: 80px;
+    gap: 5rem;
 }
 
 .cabecalho-menu-link {
@@ -50,7 +50,7 @@ body {
     height: 2px;
     bottom: 0;
     left: 0;
-    background-color: #0087ca;
+    background-color: var(--thir-color);
     transform-origin: bottom right;
     transition: transform 0.25s ease-out;
 }
@@ -112,7 +112,7 @@ body {
 .principal-links-link{
     display: flex;
     justify-content: center;
-    gap: 16px;
+    gap: 1rem;
     width: 50%;
     text-align: center;
     border-radius: 8px;
@@ -180,6 +180,23 @@ body {
     .principal-conteudo {
         width: auto;
     }
+}
 
+@media (max-width: 600px){
+    .cabecalho-menu-link {
+        font-size: 1rem;
+        font-weight: 400;
+    }
 
+    .cabecalho-menu {
+        gap: 3.5rem;
+    }
+
+    .apresentacao-imagem {
+        width: 70%;
+    }
+
+    .foto-curriculum {
+        width: 80%;
+    }
 }
