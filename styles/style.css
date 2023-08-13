@@ -1,0 +1,185 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@500;600;700;800;900&family=Krona+One&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,300;1,400;1,500;1,600;1,700&display=swap');
+
+:root {
+    --main-color: #000000;
+    --sec-color: #F6F6F6;
+    --thir-color: #22D4FD;
+    --hover-color: #272727;
+    --certified-hover-color: #107186;
+
+    --main-font: 'Krona One', sans-serif;
+    --sec-font: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: var(--main-color);
+    color: var(--sec-color);
+    box-sizing: border-box;
+}
+
+.cabecalho {
+    padding: 2% 0% 0% 15%;
+}
+
+.cabecalho-menu {
+    display: flex;
+    gap: 80px;
+}
+
+.cabecalho-menu-link {
+    font-family: var(--sec-font);
+    font-size: 1.5rem;
+    font-weight: 300;
+    color: var(--thir-color);
+    text-decoration: none;
+    display: inline-block;
+    position: relative;
+    color: var(--thir-color);
+}
+
+.cabecalho-menu-link::after{
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #0087ca;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+}
+
+.cabecalho-menu-link:hover::after{
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+.principal {
+    padding: 5% 15%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 82px;
+}
+
+.principal-conteudo {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.principal-titulo {
+    font-size: 2.25rem;
+    font-family: var(--main-font);
+}
+
+.titulo-destaque {
+    color: var(--thir-color);
+}
+
+.principal-paragrafo {
+    font-size: 1.5rem;
+    font-family: var(--sec-font);
+    font-weight: lighter;
+}
+
+.principal-paragrafo a{
+    text-decoration: none;
+    color: var(--thir-color);
+}
+
+.principal-links {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 32px;
+}
+
+.texto-socialm {
+    font-family: var(--main-font);
+    font-weight: 400;
+    font-size: 1.5rem;
+}
+
+.principal-links-link{
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    width: 50%;
+    text-align: center;
+    border-radius: 8px;
+    font-size: 1.5rem;
+    padding: 21.5px 0;
+    text-decoration: none;
+    color: var(--sec-color);
+    font-family: var(--sec-font);
+    font-weight: 600;
+    border: 2px solid var(--thir-color);
+}
+
+.principal-links-link {
+    transition: all .2s ease-in-out;
+}
+
+.principal-links-link:hover {
+    transform: scale(1.1);
+    background-color: var(--hover-color);
+}
+
+.apresentacao-imagem {
+    width: 50%;
+}
+
+.rodape {
+    padding: 5px;
+    color: var(--hover-color);
+    background-color: var(--thir-color);
+    font-family: var(--sec-font);
+    font-weight: 300;
+    font-size: 1rem;
+    text-align: center;
+    flex: 1 1 0;
+    border: 0;
+}
+
+.link-certificado:hover {
+    color: var(--certified-hover-color);
+}
+
+.foto-curriculum {
+    padding: 0 0 650px 0;
+    width: 50%;
+}
+
+@media (max-width: 1200px) {
+    .cabecalho {
+        padding: 10%;
+    }
+
+    .foto-curriculum {
+        padding: 0;
+    }
+
+    .cabecalho-menu {
+        justify-content: center;
+    }
+
+    .principal {
+        flex-direction: column-reverse;
+        padding: 5%;
+    }
+
+    .principal-conteudo {
+        width: auto;
+    }
+
+
+}
