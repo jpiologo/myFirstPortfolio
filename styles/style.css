@@ -207,24 +207,31 @@ body {
 }
 
 @media (max-width: 600px){
-    .cabecalho-menu-link {
-        font-size: 1rem;
-        font-weight: 400;
+    .cabecalho {
+        margin-bottom: 0rem;
     }
 
     .cabecalho-menu {
         gap: 3.5rem;
     }
 
-    .apresentacao-imagem {
-        width: 70%;
+    .cabecalho-menu-link {
+        font-size: 1rem;
+        font-weight: 400;
     }
 
-    .foto-curriculum {
+    .apresentacao-imagem {
         width: 80%;
+        margin-bottom: 0rem;
     }
 
     .principal-links {
         margin: 0 0 1.8rem 0;
+    }
+
+    .foto-curriculum {
+        width: 90%;
+        margin-bottom: 0;
+        padding-bottom: 0;
     }
 }
