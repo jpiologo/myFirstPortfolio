@@ -150,13 +150,36 @@ body {
     border: 0;
 }
 
+::-webkit-scrollbar {
+    display: none;
+}
+
 .link-certificado:hover {
     color: var(--certified-hover-color);
 }
 
 .foto-curriculum {
-    padding: 0 0 650px 0;
     width: 50%;
+    padding-bottom: 810px;
+}
+
+@media (max-width: 1400px) {
+    .foto-curriculum{
+        margin-bottom: 80rem;
+        padding-bottom: 600px;
+    }
+
+    .cabecalho {
+        margin-bottom: 4rem;
+    }
+
+    .apresentacao-imagem {
+        margin-bottom: 14rem;
+    }
+
+    .principal-links-link {
+        padding: 24px 44px;
+    }
 }
 
 @media (max-width: 1200px) {
